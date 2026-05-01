@@ -3,20 +3,126 @@
 
 """
 CBC Sports Add-on for Kodi
-Live sports streaming from CBC
+Live sports streaming from CBC - REQUIRES AUTHENTICATION
+Users must sign in with CBC account to watch live sports
 """
 
+import sys
 import xbmcplugin
 import xbmcgui
-import sys
+import xbmcaddon
+import requests
 
-# Add-on metadata
-ADDON_ID = 'plugin.video.cbc.sports'
-ADDON_NAME = 'CBC Sports'
+ADDON = xbmcaddon.Addon()
+ADDON_ID = ADDON.getAddonInfo('id')
+ADDON_NAME = ADDON.getAddonInfo('name')
+PLUGIN_URL = sys.argv[0]
+HANDLE = int(sys.argv[1])
+
+CBC_SPORTS_API = "https://api.cbcsports.ca"
+
+def load_auth_token():
+    """Load authentication token"""
+    return ADDON.getSetting('cbc_sports_token')
+
+def save_auth_token(token):
+    """Save authentication token"""
+    ADDON.setSetting('cbc_sports_token', token)
+
+def show_login_dialog():
+    """Show login dialog for CBC Sports"""
+    keyboard = xbmc.Keyboard('', 'Enter CBC Email')
+    keyboard.doModal()
+    
+    if keyboard.isConfirmed():
+        email = keyboard.getText()
+        keyboard2 = xbmc.Keyboard('', 'Enter Password', hidden=True)
+        keyboard2.doModal()
+        
+        if keyboard2.isConfirmed():
+            password = keyboard2.getText()
+            return authenticate_cbc(email, password)
+    
+    return False
+
+def authenticate_cbc(email, password):
+    """Authenticate with CBC service"""
+    try:
+        auth_data = {'email': email, 'password': password}
+        response = requests.post(
+            f"{CBC_SPORTS_API}/auth/login",
+            json=auth_data,
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            token = response.json().get('token')
+            if token:
+                save_auth_token(token)
+                xbmcgui.Dialog().notification('CBC Sports', 'Login Successful!')
+                return True
+        else:
+            xbmcgui.Dialog().notification('CBC Sports', 'Login Failed')
+    except Exception as e:
+        xbmcgui.Dialog().notification('Error', f'Failed: {str(e)}')
+    
+    return False
+
+def check_authentication():
+    """Check if user is authenticated"""
+    token = load_auth_token()
+    
+    if not token:
+        dialog = xbmcgui.Dialog()
+        ret = dialog.yesno('CBC Sports', 'You must sign in with your CBC account.\nDo you want to sign in now?')
+        return ret and show_login_dialog()
+    
+    return True
+
+def get_live_games():
+    """Get live games"""
+    if not check_authentication():
+        return []
+    
+    games = [
+        {'title': 'Live Hockey Game', 'sport': 'Hockey'},
+        {'title': 'Live Football', 'sport': 'Football'},
+        {'title': 'Live Soccer', 'sport': 'Soccer'},
+    ]
+    
+    return games
+
+def add_menu_items():
+    """Add main menu items"""
+    items = [
+        {'label': 'Live Sports', 'action': 'live'},
+        {'label': 'Schedule', 'action': 'schedule'},
+        {'label': 'Sign In', 'action': 'signin'},
+    ]
+    
+    for item in items:
+        url = f"{PLUGIN_URL}?action={item['action']}"
+        xbmcplugin.addDirectoryItem(HANDLE, url, xbmcgui.ListItem(item['label']), True)
+    
+    xbmcplugin.endOfDirectory(HANDLE)
 
 def main():
-    """Main entry point for the add-on"""
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+    """Main entry point"""
+    if len(sys.argv) < 2:
+        add_menu_items()
+    else:
+        params = dict(item.split('=') for item in sys.argv[2][1:].split('&') if '=' in item)
+        action = params.get('action')
+        
+        if action == 'signin':
+            show_login_dialog()
+        elif action == 'live':
+            games = get_live_games()
+            for game in games:
+                xbmcplugin.addDirectoryItem(HANDLE, '', xbmcgui.ListItem(game['title']), False)
+            xbmcplugin.endOfDirectory(HANDLE)
+        else:
+            add_menu_items()
 
 if __name__ == '__main__':
     main()

@@ -2,6 +2,7 @@
 <addon id="plugin.video.globaltv" name="Global TV" version="1.0.0" provider-name="Global">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.addon" version="14.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="__init__.py">
         <provides>video</provides>

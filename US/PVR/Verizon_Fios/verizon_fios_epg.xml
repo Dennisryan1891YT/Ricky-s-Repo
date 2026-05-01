@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Verizon Fios EPG Guide Data -->
+  <channel id="verizon.cnn.com">
+    <display-name lang="en">CNN (Verizon Fios)</display-name>
+  </channel>
+  <channel id="verizon.tnt.com">
+    <display-name lang="en">TNT (Verizon Fios)</display-name>
+  </channel>
+</tv>

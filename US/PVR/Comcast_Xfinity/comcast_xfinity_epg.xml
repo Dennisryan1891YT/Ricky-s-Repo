@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Comcast Xfinity EPG Guide Data -->
+  <channel id="comcast.abc.com">
+    <display-name lang="en">ABC HD (Comcast)</display-name>
+  </channel>
+  <channel id="comcast.espn.com">
+    <display-name lang="en">ESPN HD (Comcast)</display-name>
+  </channel>
+</tv>

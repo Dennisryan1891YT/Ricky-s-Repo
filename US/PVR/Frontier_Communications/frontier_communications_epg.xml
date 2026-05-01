@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Frontier Communications EPG Guide Data -->
+  <channel id="frontier.discovery.com">
+    <display-name lang="en">Discovery (Frontier)</display-name>
+  </channel>
+  <channel id="frontier.hgtv.com">
+    <display-name lang="en">HGTV (Frontier)</display-name>
+  </channel>
+</tv>

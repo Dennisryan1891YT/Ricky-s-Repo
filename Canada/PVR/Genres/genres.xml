@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genres>
+  <!-- Channel Genre Mapping for Color Coding -->
+  <!-- Format: genres.xml -->
+  
+  <genre id="1" color="#FF0000" name="News"/>
+  <genre id="2" color="#00FF00" name="Sports"/>
+  <genre id="3" color="#0000FF" name="Entertainment"/>
+  <genre id="4" color="#FFFF00" name="Movies"/>
+  <genre id="5" color="#FF00FF" name="Kids"/>
+  <genre id="6" color="#00FFFF" name="Documentary"/>
+  <genre id="7" color="#FFA500" name="Drama"/>
+  <genre id="8" color="#800080" name="Comedy"/>
+</genres>

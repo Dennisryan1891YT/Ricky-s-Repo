@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Dish Network EPG Guide Data -->
+  <channel id="dish.amc.com">
+    <display-name lang="en">AMC (Dish)</display-name>
+  </channel>
+  <channel id="dish.fx.com">
+    <display-name lang="en">FX (Dish)</display-name>
+  </channel>
+</tv>

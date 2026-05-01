@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Videotron EPG Guide Data -->
+  <channel id="videotron.v.ca">
+    <display-name lang="en">V (Videotron)</display-name>
+  </channel>
+  <channel id="videotron.noovo.ca">
+    <display-name lang="en">Noovo</display-name>
+  </channel>
+</tv>

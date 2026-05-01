@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Telus Optik EPG Guide Data -->
+  <channel id="telus.cbc.ca">
+    <display-name lang="en">CBC HD (Telus Optik)</display-name>
+  </channel>
+  <channel id="telus.global.ca">
+    <display-name lang="en">Global HD (Telus Optik)</display-name>
+  </channel>
+</tv>

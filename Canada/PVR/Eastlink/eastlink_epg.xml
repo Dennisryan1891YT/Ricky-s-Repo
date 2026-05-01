@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Eastlink EPG Guide Data -->
+  <channel id="eastlink.ctv.ca">
+    <display-name lang="en">CTV (Eastlink)</display-name>
+  </channel>
+  <channel id="eastlink.global.ca">
+    <display-name lang="en">Global (Eastlink)</display-name>
+  </channel>
+</tv>

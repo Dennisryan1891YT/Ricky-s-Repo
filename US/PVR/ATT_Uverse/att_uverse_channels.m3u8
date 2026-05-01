@@ -1,0 +1,11 @@
+#EXTM3U
+# AT&T U-verse Channels Playlist
+# Format: M3U8
+# Provider: AT&T Communications
+# Last Updated: 2026-05-01
+
+#EXTINF:-1 tvg-name="AT&T CBS" group-title="AT&T U-verse",CBS
+http://example.com/att_cbs.m3u8
+
+#EXTINF:-1 tvg-name="AT&T Fox" group-title="AT&T U-verse",Fox
+http://example.com/att_fox.m3u8

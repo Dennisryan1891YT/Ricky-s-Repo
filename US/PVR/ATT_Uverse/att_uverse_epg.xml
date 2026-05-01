@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- AT&T U-verse EPG Guide Data -->
+  <channel id="att.cbs.com">
+    <display-name lang="en">CBS (AT&T U-verse)</display-name>
+  </channel>
+  <channel id="att.fox.com">
+    <display-name lang="en">Fox (AT&T U-verse)</display-name>
+  </channel>
+</tv>

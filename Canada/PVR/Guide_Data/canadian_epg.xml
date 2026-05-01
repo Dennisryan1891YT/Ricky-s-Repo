@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Canadian EPG Guide Data -->
+  <!-- Format: XMLTV -->
+  <!-- Last Updated: 2026-05-01 -->
+  
+  <channel id="ctv.ca">
+    <display-name lang="en">CTV</display-name>
+    <icon src="http://example.com/ctv.png" />
+  </channel>
+  
+  <channel id="cbc.ca">
+    <display-name lang="en">CBC</display-name>
+    <icon src="http://example.com/cbc.png" />
+  </channel>
+  
+  <programme start="20260501200000 -0400" stop="20260501210000 -0400" channel="ctv.ca">
+    <title lang="en">Program Name</title>
+    <desc lang="en">Program Description</desc>
+  </programme>
+</tv>

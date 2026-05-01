@@ -1,0 +1,19 @@
+{
+  "recordings": [
+    {
+      "id": "recording_001",
+      "title": "Sample US Recording",
+      "channel": "ABC",
+      "start_time": "2026-05-01T20:00:00Z",
+      "end_time": "2026-05-01T21:00:00Z",
+      "duration": 3600,
+      "file_path": "Recordings/Transport_Stream/sample_recording.ts",
+      "file_format": "ts",
+      "file_size": 1073741824,
+      "broadcast_type": "television",
+      "genre": "Entertainment",
+      "description": "Sample recorded program metadata",
+      "thumbnail": "http://example.com/thumbnail.jpg"
+    }
+  ]
+}

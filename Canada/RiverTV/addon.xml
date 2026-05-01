@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.rivertv" name="RiverTV" version="1.0.0" provider-name="RiverTV">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="__init__.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>RiverTV - Canadian Streaming Platform</summary>
+        <description>Stream Canadian content from RiverTV</description>
+        <disclaimer>This add-on requires a valid RiverTV account</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <website>https://www.rivertv.ca</website>
+        <email></email>
+        <source>https://github.com/Dennisryan1891YT/Ricky-s-Repo</source>
+    </extension>
+</addon>

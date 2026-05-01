@@ -1,0 +1,11 @@
+#EXTM3U
+# Cox Communications Channels Playlist
+# Format: M3U8
+# Provider: Cox Communications
+# Last Updated: 2026-05-01
+
+#EXTINF:-1 tvg-name="Cox Syfy" group-title="Cox Communications",Syfy
+http://example.com/cox_syfy.m3u8
+
+#EXTINF:-1 tvg-name="Cox E!" group-title="Cox Communications",E!
+http://example.com/cox_e.m3u8

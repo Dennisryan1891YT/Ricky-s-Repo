@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Cox Communications EPG Guide Data -->
+  <channel id="cox.syfy.com">
+    <display-name lang="en">Syfy (Cox)</display-name>
+  </channel>
+  <channel id="cox.e.com">
+    <display-name lang="en">E! (Cox)</display-name>
+  </channel>
+</tv>

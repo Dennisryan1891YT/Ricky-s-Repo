@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.amazon.prime" name="Prime Video" version="1.0.0" provider-name="Amazon">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="__init__.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Prime Video - Amazon Streaming Service</summary>
+        <description>Stream movies, TV shows, and original content from Amazon Prime Video</description>
+        <disclaimer>This add-on requires a valid Amazon Prime Video subscription</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <website>https://www.primevideo.com</website>
+        <email></email>
+        <source>https://github.com/Dennisryan1891YT/Ricky-s-Repo</source>
+    </extension>
+</addon>

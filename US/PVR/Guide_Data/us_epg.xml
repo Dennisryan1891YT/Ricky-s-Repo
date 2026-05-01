@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- US EPG Guide Data -->
+  <channel id="abc.com">
+    <display-name lang="en">ABC</display-name>
+  </channel>
+  <channel id="nbc.com">
+    <display-name lang="en">NBC</display-name>
+  </channel>
+</tv>

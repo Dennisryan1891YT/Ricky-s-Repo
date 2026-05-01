@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Charter Spectrum EPG Guide Data -->
+  <channel id="charter.nbc.com">
+    <display-name lang="en">NBC (Charter)</display-name>
+  </channel>
+  <channel id="charter.hbo.com">
+    <display-name lang="en">HBO (Charter)</display-name>
+  </channel>
+</tv>

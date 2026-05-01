@@ -1,0 +1,11 @@
+#EXTM3U
+# Nexicom Channels Playlist
+# Format: M3U8
+# Provider: Nexicom Communications
+# Last Updated: 2026-05-01
+
+#EXTINF:-1 tvg-name="Nexicom CTV" group-title="Nexicom",CTV
+http://example.com/nexicom_ctv.m3u8
+
+#EXTINF:-1 tvg-name="Nexicom Global" group-title="Nexicom",Global
+http://example.com/nexicom_global.m3u8

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- DirecTV EPG Guide Data -->
+  <channel id="directv.usa.com">
+    <display-name lang="en">USA Network (DirecTV)</display-name>
+  </channel>
+  <channel id="directv.bravo.com">
+    <display-name lang="en">Bravo (DirecTV)</display-name>
+  </channel>
+</tv>

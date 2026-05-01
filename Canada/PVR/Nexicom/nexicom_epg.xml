@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Nexicom EPG Guide Data -->
+  <channel id="nexicom.ctv.ca">
+    <display-name lang="en">CTV (Nexicom)</display-name>
+  </channel>
+  <channel id="nexicom.global.ca">
+    <display-name lang="en">Global (Nexicom)</display-name>
+  </channel>
+</tv>

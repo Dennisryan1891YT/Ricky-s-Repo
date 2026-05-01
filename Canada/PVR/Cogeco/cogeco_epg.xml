@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Cogeco EPG Guide Data -->
+  <channel id="cogeco.ctv.ca">
+    <display-name lang="en">CTV (Cogeco)</display-name>
+  </channel>
+  <channel id="cogeco.global.ca">
+    <display-name lang="en">Global TV (Cogeco)</display-name>
+  </channel>
+</tv>

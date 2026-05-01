@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Shaw Direct EPG Guide Data -->
+  <channel id="shaw.ctv.ca">
+    <display-name lang="en">CTV (Shaw Direct)</display-name>
+  </channel>
+  <channel id="shaw.global.ca">
+    <display-name lang="en">Global TV (Shaw Direct)</display-name>
+  </channel>
+</tv>

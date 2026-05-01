@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Rogers EPG Guide Data -->
+  <channel id="rogers.ctv.ca">
+    <display-name lang="en">CTV HD (Rogers)</display-name>
+  </channel>
+  <channel id="rogers.sportsnet.ca">
+    <display-name lang="en">Sportsnet (Rogers)</display-name>
+  </channel>
+</tv>

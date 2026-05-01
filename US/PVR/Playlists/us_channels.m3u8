@@ -1,0 +1,10 @@
+#EXTM3U
+# US TV Channels Playlist
+# Format: M3U8
+# Last Updated: 2026-05-01
+
+#EXTINF:-1 tvg-name="ABC" group-title="US Networks",ABC
+http://example.com/abc.m3u8
+
+#EXTINF:-1 tvg-name="NBC" group-title="US Networks",NBC
+http://example.com/nbc.m3u8

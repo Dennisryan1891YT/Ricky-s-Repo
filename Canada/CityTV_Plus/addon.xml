@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.citytv.plus" name="CityTV+" version="1.0.0" provider-name="CityTV">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="__init__.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>CityTV+ - Premium CityTV Streaming</summary>
+        <description>Stream premium content from CityTV+</description>
+        <disclaimer>This add-on requires a valid CityTV+ subscription</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum></forum>
+        <website>https://www.citytv.com</website>
+        <email></email>
+        <source>https://github.com/Dennisryan1891YT/Ricky-s-Repo</source>
+    </extension>
+</addon>

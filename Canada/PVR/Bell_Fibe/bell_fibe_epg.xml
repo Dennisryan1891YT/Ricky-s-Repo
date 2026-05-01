@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
+  <!-- Bell Fibe EPG Guide Data -->
+  <channel id="bell.cbc.ca">
+    <display-name lang="en">CBC HD (Bell Fibe)</display-name>
+  </channel>
+  <channel id="bell.ctv.ca">
+    <display-name lang="en">CTV HD (Bell Fibe)</display-name>
+  </channel>
+</tv>
